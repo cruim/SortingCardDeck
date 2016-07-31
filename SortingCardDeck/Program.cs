@@ -10,6 +10,7 @@ class Solution
 
         int i = Convert.ToInt32(Console.ReadLine()); // начальное число элементов
         int[] array = new int[i];
+        int numberOfIteration = 0; // кол-во итераций для полной сортировки колоды
 
         // экземпляр класса, отвечающий за поиск минимального элемента
         MinElement minEl = new MinElement();
@@ -52,6 +53,16 @@ class Solution
         {
             Console.Write(t + " ");
         }
+
+        
+        for (int j = 1; j <= i; j++)
+        {
+            numberOfIteration = numberOfIteration + j;
+        }
+
+        Console.Write("\n");
+
+        Console.WriteLine(numberOfIteration);
 
         Console.ReadLine();
 
