@@ -1,15 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public class MinElement
 {
+
     public int SortingCardDeck(List<int> array)
     {
         int minElement = array[0];
-        for (int i = 0; i < array.Count; i++)
+
+        foreach (int t in array)
         {
-            if (minElement > array[i])
+
+            if (minElement > t)
             {
-                minElement = array[i];
+                minElement = t;
             }
         }
 
